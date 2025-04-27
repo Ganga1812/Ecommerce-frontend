@@ -1,0 +1,162 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: white;
+}
+
+header{
+    background: rgb(228, 226, 226);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+h1{
+    color: black;
+  }
+
+  .search-cart-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  #search {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .cart-container {
+    position: relative;
+  }
+
+  #cart-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  .cart-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px grey;
+    padding: 1rem;
+    z-index: 99;
+    color: indigo;
+  }
+
+  .cart-dropdown h3{
+    margin: 0 0 0.5rem;
+    color: red;
+    font-size: 1rem;
+}
+
+.cart-dropdown ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.cart-dropdown li {
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgb(253, 253, 253);
+    color: black;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cart-item img{
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 5px;
+  background: pink;
+  padding: 4px;
+}
+
+.cart-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: black;
+}
+
+#cart-count{
+  color: black;
+}
+
+.cart-info span {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.product-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px grey;
+  overflow: hidden;
+  transition: transform o.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: white;
+  padding: 0.5rem;
+}
+
+.product-card .info {
+  padding: 1rem;
+}
+
+.product-card p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: red;
+}
+
+.product-card button {
+  padding: o.4rem 1rem;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-card button:hover {
+  background: red;
+}
+
+.hidden {
+  display: none;
+}

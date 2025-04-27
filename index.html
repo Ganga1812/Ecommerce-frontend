@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0"/>
+    <title>E-COMMERCE</title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+<body>
+    <header>
+        <h1>E-COMMERCE</h1>
+
+        <div class="search-cart-container">
+            <input type="text" id="search" 
+            placeholder="Search Products..." />
+
+        <div class="cart-container">
+            <div id="cart-btn"> 🛒 <span id="cart-count">0</span></div>
+            <div id="cart-dropdown" class="cart-dropdown hidden">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        </div>
+        </div>  
+        </div>
+        </header>
+
+        <main>
+            <div class="product-grid"
+            id="product-list"></div>
+        </main>
+        
+        <script src="script.js" defer></script>
+        </body>
+        </html>
